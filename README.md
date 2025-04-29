@@ -4,7 +4,7 @@
 
 **NOTE: Image quantized to 5 discrete colors**
 
-Color quantization is quantization applied to vectors in a three dimensional color space. In this case the color palette choosen for color quantization, is obteined through performing the k-means algorithm with the RGB values of each pixel in an image, as points in a three dimensional space. Afterwards the values of each pixel are rounded or quantized to the nearest centroid obtained from the k-means algorithm.
+Color quantization consists in rounding each color vector in each pixel of an image to the nearest vector out of a predefined color palette. In this case the color palette is obteined by applying the k-means algorithm to an image, with the RGB values of each pixel being treated as points in a three dimensional space. Afterwards the value of each pixel is rounded or quantized to the nearest centroid obtained from the k-means algorithm. This way the selected color pallet efficiently uses the restricted number of colors to represent the image faithfully.
 
 ## Usage
 
